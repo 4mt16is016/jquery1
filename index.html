@@ -1,0 +1,59 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>jquery</title>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script>
+            $(function() {
+
+                $("#btn").click(function() {
+                    $("#content").html("<h3>welcome to jquery world....</h3>");
+                });
+                $("p").hover(function() {
+                    $(this).css("background-color", "yellow");
+
+                });
+                $("p").mouseleave(function() {
+                    $(this).css("background-color", "white");
+                });
+                size = 16;
+                $("#plus").click(function() {
+                    $("body").css("font-size", size++);
+
+
+                });
+                $("#minus").click(function() {
+                    $("body").css("font-size", size--);
+                })
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <hr>
+
+        <button id="btn">Click!</button>
+        <div id="content"></div>
+        <p>
+
+            2 down vote favorite 1 I am trying to make an array of strings and then pluck a random string and place it in a div with class "quote". Below is my current code.
+        </p>
+        <p>
+
+            2 down vote favorite 1 I am trying to make an array of strings and then pluck a random string and place it in a div with class "quote". Below is my current code.
+        </p>
+        <p>
+
+            2 down vote favorite 1 I am trying to make an array of strings and then pluck a random string and place it in a div with class "quote". Below is my current code.
+        </p>
+        <p>
+
+            2 down vote favorite 1 I am trying to make an array of strings and then pluck a random string and place it in a div with class "quote". Below is my current code.
+        </p>
+    </body>
+
+    </html>
