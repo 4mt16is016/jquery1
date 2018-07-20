@@ -7,12 +7,20 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/regform.js"></script>
+    
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 </head>
 
 <body>
     <h3>Placement-Registration Form</h3>
     <hr>
+    <button id="btnsub"class="regstu"style='float:right;margin-bottom:10px;'>register</button>
+    <div id="dialog" style="display:none">
     <form id="regform">
         <p class="container">
             <label>
@@ -51,7 +59,6 @@
                 <option value="mech">MECH</option>
             </select>
 
-        </p>
 
 
 
@@ -61,6 +68,16 @@
         </label>
             <input type="text" name="percentage" id="percentage" class="required inpreg">
         </p>
+        
+               
+         <p class="container">
+            <label>
+        dob<span class="star">*</span>
+        </label>
+            <input type="text" name="dob" id="dob" class="required inpreg">
+        </p>
+      
+
 
         <p class="container">
             <label>&nbsp;</label>
@@ -69,6 +86,9 @@
 
         </p>
     </form>
+    </div>
+
+    <div id="content"></div>
 </body>
 
 </html>
